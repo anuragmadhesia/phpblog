@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(199, 198, 198) !important;
+    height:100vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    height: 300px;
+    margin: 150px auto;
+    background:linear-gradient(rgb(36, 201, 212),white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 skyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 50px;
+}
+.form label{
+    margin: 0 0 10px 70px;
+    font-size: 20px;
+}
+.form input{
+    margin: 0 70px;
+    height: 25px;
+    background:whitesmoke;
+    border: 1px solid rgb(121, 183, 207);
+    border-radius: 3px;
+    outline: none;
+}
+.form input[type=text]{
+    font-size: 18px;
+    font-weight: 400;
+}
+.form button{
+    margin: 10px 0 0 70px;
+    font-size: 15px;
+    background: rgb(14, 148, 201);
+    width: 100px;
+    height: 30px;
+    border:skyblue;
+    border-radius: 5px;
+    outline: none;
+}
+/* header navbar list time */
+.navbar li{
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 400;
+}

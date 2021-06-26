@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /blog/
+RewriteRule ^category/(.*)$ category-links.php?id=$1 [L]
+RewriteRule ^page/(.*)$ page.php?pageId=$1 [L]
+RewriteRule ^tag/(.*)$ tag-links.php?id=$1 [L]
+RewriteRule ^link/sitemap.xml/?$ link/sitemap.php
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+RewriteRule ^(.*)$ show.php?id=$1 [QSA,L]
